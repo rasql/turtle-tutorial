@@ -90,6 +90,21 @@ Pour faire tourner la tortue 45 degrès à droite::
 
     >>> turtle.right(45)
 
+La console est un outil très pratique. 
+A n'importe quel moment tu peux facilment tester quelque chose.
+
+Remonter dans l'historique
+--------------------------
+
+Toutes les commandes que tu as entrez dans la consoles pendant une session,
+tu les peux facilment retrouver, modifier et réutiliser.
+
+.. image:: arrows.png
+
+Il suffit d'utiliser les flèches **haut** et **bas** pour te balader dans le historique.
+
+Essaye, c'est très pratique.
+
 
 Ecrire un programme
 -------------------
@@ -131,14 +146,61 @@ Tu peux ajouter une porte en dessinant encore un rectangle.
 :download:`house2.py <house2.py>`
 
 
-Dessiner un cercle
+Erreurs fréquentes
 ------------------
 
-La fonction ``turtle.circle(40)`` permet de dessiner un cercle avec un rayon de 40 pixels.
-Dans le programme ci-dessous la tortue dessine deux cercles.
+Si tu fais une erreur avec le nom module, par exemple *turtel* au lieu de *turtle*,
+tu obtient un erreur de type ``ModuleNotFoundError``::
 
-.. image:: circle.png
+    >>> import turtel
+    Traceback (most recent call last):
+    File "<pyshell>", line 1, in <module>
+    ModuleNotFoundError: No module named 'turtel'
 
-.. literalinclude:: circle.py
+Si tu oublie de donner un argument à une fonction, 
+par exemple tu as oublié de mettre und distance pour la fonction *forward()*, 
+tu obtient une erreur de type ``TypeError``::
 
-:download:`circle.py <circle.py>`
+    >>> turtle.forward()
+    Traceback (most recent call last):
+    File "<pyshell>", line 1, in <module>
+    TypeError: forward() missing 1 required positional argument: 'distance'
+
+Si tu fais une erreur dans le nom d'une fonction, par exemple *foreward* au lieu de *forward*, 
+tu obtient une erreur ``AttributeError``::
+
+    >>> turtle.foreward(100)
+    Traceback (most recent call last):
+    File "<pyshell>", line 1, in <module>
+    AttributeError: module 'turtle' has no attribute 'foreward'
+
+Raccourcie ton code
+-------------------
+
+Si tu veux raccourcir ton code, 
+tu peut importer toutes les commandes dans l'espace de ta session avec le symbole ``*``::
+
+    >>> from turtle import *
+
+Ensuite tu dois créer un objet ``Screen()`` qui ouvre une fenêtre::
+
+    >>> Screen()
+    <turtle._Screen object at 0x1063f68d0>
+
+Maintenant tu peux directement utiliser les fonctions, sans les précéder de ``turtle.``::
+
+    >>> forward(100)
+    >>> left(45)
+    >>> forward(100)
+
+Si tu veux écrire tes commandes encore plus courtes, 
+tu peux utiliser les raccourcis à deux lettres: 
+``fd`` (forward), ``bk`` (back), ``lt`` (left) et ``rt`` (right)::
+
+    >>> fd(100)
+    >>> lt(45)
+    >>> fd(100)
+    >>> rt(90)
+    >>> fd(100)
+    >>> bk(200)
+    

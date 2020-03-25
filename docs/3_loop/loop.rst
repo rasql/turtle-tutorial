@@ -165,3 +165,21 @@ Il suffit d'appeler ces deux fonctions avant et après::
 :download:`polygon4.py <polygon4.py>`
  
 
+Dessiner un arc en ciel
+-----------------------
+
+Pour dessiner un arc en ciel nous definissons d'abord une liste avec les couleurs::
+
+    colors = ('red', 'orange', 'yellow', 'lightgreen', 'lightblue', 'violet')
+
+Ceci nous permet de répéter une boucle pour chaque élément de cette liste::
+
+    for color in colors:
+        turtle.pencolor(color)
+
+.. image:: rainbow.png
+
+.. literalinclude:: rainbow.py
+
+:download:`rainbow.py <rainbow.py>`
+

@@ -8,13 +8,16 @@ Programmer en Python
 ====================
 
 Dans ce cours tu apprends à programmer en Python en utilisant 
-une tortue pour faire des dessins.
+une tortue pour faire des dessins. Mais le message principale c'est:
+
+* Programme toi-même (évite le copier-coller) 
+* Modifie, essaye, invente
 
 .. toctree::
    :maxdepth: 2
 
-
    1_intro/intro
+   2_draw/draw
    2_variable/variable
    3_loop/loop
    4_random/random

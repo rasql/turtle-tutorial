@@ -1,4 +1,4 @@
-# draw a house
+# draw two circles
 import turtle
 
 turtle.forward(100)
