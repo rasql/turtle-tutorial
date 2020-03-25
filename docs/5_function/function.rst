@@ -10,4 +10,5 @@ Une fonction ``virus(d)`` a été définit qui permet à la tortue de dessiner
 très facilment les 3 virus qui ont tous une taille différente, en réutilisant un code.
 
 .. image:: virus.png
+
 :download:`virus.py <virus.py>`

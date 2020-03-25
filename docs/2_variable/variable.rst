@@ -9,6 +9,7 @@ L'exemple ci-dessous montre la tortue qui visite les 5 facultés de l'EPFL.
 Les noms des facultés sont stockés dans une ``variable``.
 
 .. image:: epfl2.png
+
 :download:`epfl2.py <epfl2.py>`
 
 Dessiner un rectangle

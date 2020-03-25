@@ -101,4 +101,5 @@ Une fois le programme terminé, tu peux l'executer à l'aide du bouton vert **Ex
 .. image:: intro2.png
 
 .. literalinclude:: intro2.py
+
 :download:`intro2.py <intro2.py>`
