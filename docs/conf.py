@@ -62,6 +62,3 @@ html_theme = 'alabaster'
 html_static_path = ['_static']
 
 master_doc = 'index'
-html_theme = 'epfl'
-import epfl_theme
-html_theme_path = [epfl_theme.get_theme_dir()]

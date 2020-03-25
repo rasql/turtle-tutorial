@@ -2,13 +2,17 @@
    sphinx-quickstart on Tue Mar 24 08:35:12 2020.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
+      :caption: Contents:
 
-Welcome to Python Turtle's documentation!
-=========================================
+Programmer en Python
+====================
+
+Dans ce cours tu apprends à programmer en Python en utilisant 
+une tortue pour faire des dessins.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+
 
    1_intro/intro
    2_variable/variable

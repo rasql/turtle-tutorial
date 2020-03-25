@@ -1,5 +1,8 @@
-Choisir de façon aléatoire
-==========================
+L'aléatoire
+===========
+
+L'aléatoire est ce qui relève du hasard. 
+Quand on roule un dés, son résultat est aléatoire.
 
 Dans des jeux ou des animations, il est souvent nécessaire de pouvoir calculer des valeurs aléatores. 
 Le module ``random`` permet de trouver des valeurs aléatoires.

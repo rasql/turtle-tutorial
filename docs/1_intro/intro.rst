@@ -1,5 +1,5 @@
-Introduction à la programmation
-===============================
+Introduction
+============
 
 Dans ce tutoriel tu vas apprendre à programmer dans un langage qui s'appelle **Python**.
 Tu vas programmer les déplacements d'une tortue. Voici à quoi ça va ressembler.
@@ -98,8 +98,47 @@ Tous ces commandes que tu peux écrire directement dans la console,
 tu peux aussi les mettre dans un programme (qu'on appelle script).
 Une fois le programme terminé, tu peux l'executer à l'aide du bouton vert **Executer**.
 
-.. image:: intro2.png
+Le programme suivant dessine un triangle.
 
-.. literalinclude:: intro2.py
+.. image:: triangle.png
 
-:download:`intro2.py <intro2.py>`
+.. literalinclude:: triangle.py
+
+:download:`triangle.py <triangle.py>`
+
+
+Dessiner une maison
+-------------------
+
+En utilisant des angles de 45 et 90 degrees, tu peux dessiner une maison.
+
+.. image:: house.png
+
+.. literalinclude:: house.py
+
+:download:`house.py <house.py>`
+
+
+Ajouter une porte
+-----------------
+
+Tu peux ajouter une porte en dessinant encore un rectangle.
+
+.. image:: house2.png
+
+.. literalinclude:: house2.py
+
+:download:`house2.py <house2.py>`
+
+
+Dessiner un cercle
+------------------
+
+La fonction ``turtle.circle(40)`` permet de dessiner un cercle avec un rayon de 40 pixels.
+Dans le programme ci-dessous la tortue dessine deux cercles.
+
+.. image:: circle.png
+
+.. literalinclude:: circle.py
+
+:download:`circle.py <circle.py>`

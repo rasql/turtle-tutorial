@@ -1,5 +1,5 @@
-Nommer un bout de code
-======================
+La fonction
+===========
 
 Une fonction permet de donner un nom à un bout de code. 
 C'est un peu comme une variable qui est un nom pour une valuer.
