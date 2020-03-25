@@ -1,10 +1,19 @@
-Donner un nom a une valeur
-==========================
+Nommer une valeur
+=================
 
-Parfois nous utilisons les mêms valeurs plusieurs fois dans un programme.
-Par exemple quand on dessine une carré on utilise la longeur 4 fois.
+Parfois nous utilisons la même valeur plusieurs fois dans un programme.
+Il est alors pratique de pouvoir donner un nom à cette valeur. 
+Une **variable** permet d'associer un **nom** à une **valeur**.
+
+L'exemple ci-dessous montre la tortue qui visite les 5 facultés de l'EPFL.
+Les noms des facultés sont stockés dans une ``variable``.
+
+.. image:: epfl2.png
+:download:`epfl2.py <epfl2.py>`
+
+Dessiner un rectangle
+---------------------
 Quand on dessine un rectangle, on utilise la largeur et la hauteur 2 fois.
-
 Il est pratique dans ce cas, de donner un nom à ces valeurs.
 C'est exactement ce que font les variables.
 Une variable est un nom qui est associé à une valeur numérique.
