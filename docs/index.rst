@@ -18,7 +18,8 @@ une tortue pour faire des dessins. Mais le message principale c'est:
 
    1_intro/intro
    2_draw/draw
-   2_variable/variable
+   2_func/func
+   2_var/var
    3_loop/loop
    4_random/random
    5_function/function

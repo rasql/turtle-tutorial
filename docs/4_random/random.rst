@@ -22,7 +22,8 @@ Pour pouvoir utiliser des fonctions aléatoirs nous devons d'abord importer le m
     import random
 
 La fonction ``random.randint(-100, 100)`` retourne une valeur aléatoire 
-qui se situe entre les deux valeurs -100 et 100.
+qui se situe entre les deux valeurs -100 et 100. Nous calculons deux valeurs, x et y, 
+pour obtenir une position aléatoire.
 
 .. image:: random1.png
 
@@ -34,8 +35,8 @@ qui se situe entre les deux valeurs -100 et 100.
 Angle aléatoire
 ---------------
 
-Pour simulier la marche aléatoire d'une fourmi, nous pouvons chosir l'angle à tourner
-à chaque itération comme::
+Pour simulier la marche aléatoire d'une fourmi, nous pouvons garder la distance avancéé
+constante, et chosir l'angle à tourner à chaque itération comme::
 
     angle = random.randint(-90, 90)
 
@@ -50,7 +51,7 @@ Taille aléatoire
 ----------------
 
 Ci-dessous la tortue va à une position (x, y) aléatoire et choisit une taille aléatoire 
-pour le cercle à dessiner::
+dans l'intervalle [10, 50] pour le cercle à dessiner::
 
     size = random.randint(10, 50)  
     turtle.goto(x, y)
@@ -72,7 +73,7 @@ Il faut d'abord definir une liste::
     colors = ('red', 'blue', 'green', 'violet', 'yellow', 'cyan', 'orange', 'magenta')
 
 Ensuite un élément aléatoire est choisi de cette liste et utilisé comme nouvelle
-couleur de la tortue::
+couleur pour la tortue::
 
     color = random.choice(colors)
     turtle.pencolor(color)

@@ -1,7 +1,7 @@
 La boucle
 =========
 
-Dans un programme il a souvent des séquences qui se répètent.
+Dans un programme il a souvent des bouts de code qui doivent être répétés.
 On utilise alors une structure qu'on appelle **boucle** pour indiquer au programme
 de répèter certains instructions.
 
@@ -25,16 +25,26 @@ On peut dessiner un carre en répétant 4 fois ces instructions
 
 .. image:: square1.png
 
-Dans Python il a une instruction qui permet de répéter des lignes de code.
-C'est instruction s'appelle **boucle**.
-Pour répéter des lignes de code un certain nombre de fois il faut écrire::
+La **boucle** est une structure qui permet de répéter des lignes de code.
+Pour répéter un bout de code un certain nombre écris::
 
     for i in range(10):
         code
         ...
 
-Le même programme du carrée devient beaucoup plus compact si tu utilise une boucle. 
-Au lieu de 8 lignes tu fin
+Cette structure est appelé la **boucle for**. Elle constiste de
+
+- mot-clé ``for``
+- une variable, souvent appelé ``i``
+- mot-clé ``in``
+- fonction ``range(n)``
+- deux-points ``:``
+
+En Python, un deux-point est toujours suivi d'un bout de code indenté.
+Normalement c'est 4 espaces vides qui décalent le code qui suit vers la droite.
+
+Le programme du carrée devient beaucoup plus compact si tu utilise une boucle. 
+Au lieu de 8 lignes tu as besoin que 3 lignes.
 
 .. literalinclude:: square2.py
 
@@ -48,10 +58,10 @@ Le ``i`` dans l'expression de boucle ``for i in range(4)`` est bien une variable
 En fait c'est une variable qui va prendre succéssivement les valeurs 0, 1, 2, 3.
 
 En Python on a l'habitude de commencer à compter à 0. 
-C'est l'a raison aussi qu'on s'arrête à 3, un de moins que la valeur 4 dans ``range(4)``.
+C'est l'a raison aussi qu'on s'arrête à 3, et non pas à 4 dans ``range(4)``.
 
 Nous allons utiliser la fonction ``turtle.write(i)`` pour 
-écrire cette valeur dans chaque sommet.
+écrire cette valeur du compteur de boucle dans chaque sommet.
 
 .. image:: square3.png
 
@@ -86,6 +96,23 @@ L'operéateur ``+=`` est un raccourci pour dire ``a = a + 20?``
 :download:`square4.py <square4.py>`
 
 
+Une façon plus compact est d'utiliser un indicateur de plage de forme::
+
+    for a in range(40, 160, 20):
+
+- la valeur 40 est la valeur initiale
+- la valeur 160 la valeur finale (mas pas atteint)
+- la valeur 20 est l'incrément
+
+La variable ``a`` va donc parcourir les valeurs 40, 60, 80, 100, 120, et 140.
+
+.. image:: square5.png
+
+.. literalinclude:: square5.py
+
+:download:`square5.py <square5.py>`
+
+
 Dessiner un polygone
 --------------------
 
@@ -110,7 +137,7 @@ Cette fois nous utilisons l'expression de boucle suivante::
     for n in range(3, 7):
 
 Le compteur de boucle ``n`` ne commence cette fois pas à 0 mais à 3. 
-Il va parcourir à tour de roles les valeurs 3, 4, 5, et 6. 
+Il va parcourir à tour de role les valeurs 3, 4, 5, et 6. 
 Dans la boucle intérieur la tortue va nous dessiner donc un triangle, un carré, 
 un pentagone et un hexagone.
 
@@ -125,12 +152,12 @@ Dessiner une étoile
 
 Dessiner une étoile est similaire à dessiner un polygone régulier.
 En fait, on peut même considérer une étoile commme un polygone régulier.
-Pour une étoile on a aussi ces deux conditions:
+Pour une étoile on a aussi ces deux conditions qui tiennent:
 
 - toutes les côtés ont la même longueur
 - toutes les angles ont la même valeur
 
-Il suffit de modifier la formule pour calculer l'angle::
+Il suffit de modifier la formule du calculer d'angle::
 
     turtle.left(360/n*m)
 
@@ -152,8 +179,7 @@ Vous allez même constater que pour ``m=1`` vous revenez vers le polygone ordina
 Dessiner une étoile remplie
 ---------------------------
 
-Un dessin de la tortue peut être rempli. 
-Il suffit d'appeler ces deux fonctions avant et après::
+Pour remplir le dessin de l'étoile il suffit d'appeler ces deux fonctions avant et après::
 
     turtle.begin_fill()
     turtle.end_fill()
@@ -168,11 +194,11 @@ Il suffit d'appeler ces deux fonctions avant et après::
 Dessiner un arc en ciel
 -----------------------
 
-Pour dessiner un arc en ciel nous definissons d'abord une liste avec les couleurs::
+Pour dessiner un arc-en-ciel nous définissons d'abord une liste de couleurs::
 
     colors = ('red', 'orange', 'yellow', 'lightgreen', 'lightblue', 'violet')
 
-Ceci nous permet de répéter une boucle pour chaque élément de cette liste::
+Ceci nous permet de répéter dans une boucle pour chaque élément de cette liste::
 
     for color in colors:
         turtle.pencolor(color)

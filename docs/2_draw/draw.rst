@@ -1,26 +1,24 @@
 Dessiner
 ========
 
-Nous avons déjà vu les 4 commandes de base pour déplacer la tortue: 
-*forward, backward, left* et *right*.
-
-Mais tu peux contrôler tous les aspcets du dessin:
+Tu as vu les 4 commandes de base pour déplacer la tortue: 
+*forward, backward, left* et *right*. Mais tu peux contrôler d'autres aspcets du dessin:
 
 - épaisseur du trait
 - couleur du trait
 - couleur de remplissage
 
-En plus tu peux:
+En plus tu peux aussi:
 
 - monter et descendre le stylo
 - dessiner des cercles
 - ajouter du text
 
-Monter/descendre le stylo
--------------------------
+Monter le stylo
+---------------
 
 La tortue peut monter et descendre son style.
-Ceci lui permet de dessiner des lignes séparés.
+Ceci lui permet de dessiner des lignes séparées.
 
 .. image:: draw1.png
 
@@ -32,7 +30,8 @@ Ceci lui permet de dessiner des lignes séparés.
 Téléporter la tortue
 --------------------
 
-La tortue peux aller à n'importer quel position indiqué par des coordonnés (x, y).
+La tortue peux aller directement (en ligne droite) à n'importer quel position 
+indiquée par des coordonnés (x, y).
 La commande ``turtle.goto(0, 20)`` va téléporter la tortue à la position (x=0, y=20).
 
 .. image:: draw2.png
@@ -57,9 +56,9 @@ Tu peux modifier l'épaisser du stylo avec la commande ``turtle.width(2)``.
 La couleur de ligne
 -------------------
 
-Tu peux modifier la couldur du stylo avec la commande ``turtle.pencolor('blue')``.
+Tu peux modifier la couleur du stylo avec la commande ``turtle.pencolor('blue')``.
 
-Voici les couleurs que tu peux choisirs: 
+Voici les couleurs que tu peux choisir: 
 
 *yellow, gold, orange, red, maroon, violet, pink, magenta, purple, navy, 
 blue, sky blue, cyan, turquoise, lightgreen, green, darkgreen, chocolate, 

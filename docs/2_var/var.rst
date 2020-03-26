@@ -1,7 +1,7 @@
 La variable
 ===========
 
-Parfois nous utilisons la même valeur plusieurs fois dans un programme.
+Parfois nous utilisons la même valeur numérique plusieurs fois dans un programme.
 Il est alors pratique de pouvoir donner un nom à cette valeur. 
 Une **variable** permet d'associer un **nom** à une **valeur**.
 
@@ -14,12 +14,15 @@ Les noms des facultés sont stockés dans une ``variable``.
 
 Dessiner un rectangle
 ---------------------
-Quand on dessine un rectangle, on utilise la largeur et la hauteur 2 fois.
-Il est pratique dans ce cas, de donner un nom à ces valeurs.
-C'est exactement ce que font les variables.
-Une variable est un nom qui est associé à une valeur numérique.
-Au début du programme on definit les variable.
-Dans le programme on peut par la suite utiliser ces variables à la places des valeurs numériques.
+
+Un rectangle est défini entièrement par deux grandeurs:
+
+- largeur
+- hauteur
+
+Quand on dessine un rectangle, chaque valeur est utilisée 2 fois.
+Tu peux définir ces valeurs au début du programme avec des variables.
+Dans le programme tu peut ensuite utiliser ces variables à la places de valeurs numériques.
 
 .. literalinclude:: var1.py
 
@@ -31,15 +34,13 @@ Changer la valeur d'une variable
 --------------------------------
 
 A n'importe quel moment dans un programme tu peux changer la valeur d'une variable.
-Dans l'example qui suit, nous mettons d'abord la valeur 100 dans la variable ``a``.
-Ensuite nous dessinons un triangle.
-
-Plus tard dans le programme nous changeons la valeur de la variable ``a`` vers 200.
-Nous dessinons de nouveau un triangle, avec exactement le même code, mais cette fois le triangle est deux fois plus grand.
-
-.. literalinclude:: var2.py
+Dans l'example qui suit, nous mettons d'abord la valeur de la variable ``a`` à 50. 
+Ensuite nous la changeons à 100 et finalement à 150.
+A chaque fois nous dessinons un triangle qui utilise la valeur de cette variable comme longueur.
 
 .. image:: var2.png
+
+.. literalinclude:: var2.py
 
 :download:`var2.py <var2.py>`
 
@@ -47,17 +48,17 @@ Nous dessinons de nouveau un triangle, avec exactement le même code, mais cette
 Demander une valeur
 -------------------
 
-Python permet de demander une valeur à l'utilisateur avec la commande::
+Python permet de demander une valeur en utilisant la fonction::
 
   a = turtle.numinput('Rectangle', 'largeur')
 
-Cette commande va ouvrir une fenêtre de dialogue avec
+Cette fonction va ouvrir une fenêtre de dialogue avec
 le titre **Rectangle** et le dialogue **largeur**.
+
+.. image:: var3a.png
 
 Tu peux entrer un nombre, par exemple 200. 
 Quand tu clique sur **OK** ce nombre va être affecté à la variable ``a`` .
-
-.. image:: var3a.png
 
 Le programme demande également la hauteur du rectangle et met cette valeur dans 
 la variable ``b``. 
@@ -74,13 +75,13 @@ Dessiner un parallélogramme
 ---------------------------
 
 Deux angles voisin d'un parallélogram se complètent pour donner 180 degrés.
-Nous pouvons donc calcule l'angle complémentaire selon l'expression::
+Nous pouvons donc calculer l'angle complémentaire selon l'expression::
 
   turtle.left(180-angle)
 
-Il est facile de changer l'angle de parallélogramme. 
-On le change une fois, et le programme calcule automatiquement les 4 angles 
-que la tortue doi 
+Il est facile de changer l'angle du parallélogramme quand on utilise une variable.
+Au lieu de changer 4 valeurs, on modifie une seule valeur au début du programme.
+Les 4 angles sont calculés par la suite en utilisant cette variable.
 
 .. image:: var4.png
 

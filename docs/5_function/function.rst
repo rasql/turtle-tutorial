@@ -1,13 +1,12 @@
-La fonction
-===========
+La fonction avec arguments
+==========================
 
 Une fonction permet de donner un nom à un bout de code. 
-C'est un peu comme une variable qui est un nom pour une valuer.
-Mais ici on donne un nom pour un morceau de code.
+C'est similaire à une variable qui associe un nom à une valuer.
 
 Dans l'exemple ci-dessous la tortue dessine un virus.
-Une fonction ``virus(d)`` a été définit qui permet à la tortue de dessiner
-très facilment les 3 virus qui ont tous une taille différente, en réutilisant un code.
+Une fonction ``virus(d)`` a été défini qui permet à la tortue de dessiner
+des virus de taille différente. La fonction a un paramètre ``d`` qui est la taille du virus.
 
 .. image:: virus.png
 
@@ -40,20 +39,16 @@ Dans la boucle nous choisissons 10 fois une position aléatoire ou dessiner l'he
 
 :download:`function1.py <function1.py>`
 
-Nous avons deux avantages:
-
-- le code est plus **court** : ici nous économisons 9x3 lignes de code
-- le code est plus **lisibile** : on comprend tout de suite l'expression *polygon()*
 
 Une fonction avec des arguments
 -------------------------------
 
-La fonction ``polygon()`` au-paravant est certes pratiques, mais pas très flexible.
+La fonction ``hexagon()`` au-paravant est certes pratiques, mais pas très flexible.
 Elle ne permet que de dessiner des hexagones, et seulement une taille fixe.
 
-Tu vas découvir les arguments d'une fonction. 
-Les arguments sont des variables qui sont passé à la fonction et qui permettent 
-de modifier la tâche de la fonction.
+Pour avoir cette flexibilité tu dois donner des arguments à la fonction. 
+Les arguments d'une fonction sont des variables qui sont passé à la fonction lors de l'appel de fonction.
+Ces arguments permettent de modifier la tâche de la fonction.
 
 Nous allons donner deux arguments à la fonction:
 
@@ -84,7 +79,7 @@ Nous povons maintenant appler la fonction 3 fois avec des arguments différents:
 Une fonction avec 4 arguments
 -----------------------------
 
-Nous reprenons l'étoile d'un programme précédent. 
+Nous reprenons l'étoile vu précédemment. 
 Nous allons la transformer en fonction avec 4 parametres: 
 
 - le nombre de sommets **n**

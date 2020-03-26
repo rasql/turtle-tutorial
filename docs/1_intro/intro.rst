@@ -9,7 +9,7 @@ Tu vas programmer les déplacements d'une tortue. Voici à quoi ça va ressemble
 :download:`epfl1.py <epfl1.py>`
 
 Cette tortue laisse une trace qui te permet de faire des dessins.
-Mais tout d'abord tu dois télécharger un outil de travail.
+Mais tout d'abord tu dois télécharger un outil pour programmer.
 
 Installer un éditeur
 --------------------
@@ -17,36 +17,37 @@ Installer un éditeur
 Vas sur le site https://thonny.org
 et télécharge l'application **Thonny**.
 
-C'est un éditeur de programme qui permet de
+C'est un éditeur de programme qui te permet
 
 - **écrire** un programme
 - **executer** ce programme
 - **afficher** le résultat
 
-.. image:: thonny.png
-
 Dans Thonny tu as trois régions
 
-- les **boutons** pour *Créer, Ouvrir, Sauvegarder, Executer* un programme
-- la partie **éditeur** pour écrire un programme entier (<untitled>)
-- la **console** pour executer des commandes courtes (Shell)
+#. les **boutons** pour *Créer, Ouvrir, Sauvegarder, Executer* un programme
+#. la partie **éditeur** pour écrire un programme entier
+#. la **console** pour executer des commandes courtes (Shell)
+
+.. image:: thonny.png
+
 
 Les premiers pas
 ----------------
 
-Dans la console (ou Shell) tu peux directement entrer des expression courtes que Python peut évaluer.
+Dans la console (ou Shell) tu peux directement entrer des expressions courtes que Python peut évaluer.
 Après les 3 chevrons (>>>) tu peux écrire cette addition::
 
     >>> 1 + 2
     3
 
-Tu peux aussi essayer Cette muliplication::
+Tu peux aussi essayer cette muliplication::
 
     >>> 12 + 13
     156
 
-Dans Python tu n'es pas limité dans le nombre de chiffre qu'un calcul peut produire.
-Voici cette puissance de deux nombres qui donne un résultat qui s'étale sur 5 lignes::
+Python n'est pas limité dans le nombre de chiffres qu'un calcul peut produire.
+Voici une puissance de deux nombres qui donne un résultat qui s'étale sur 5 lignes::
 
     >>> 123 ** 123
     11437436793461719009988029522806627674621807845185022977588797
@@ -57,51 +58,54 @@ Voici cette puissance de deux nombres qui donne un résultat qui s'étale sur 5 
 
 
 
-Controler une tortue
---------------------
+Dessiner avec une tortue
+------------------------
 
-Par la suite nous allons utiliser le module ``turtle`` tortue.
-Pour pouvoir l'utiliser nous devons importer ce module au début du programme::
+Par la suite nous allons utiliser le module ``turtle``.
+Ce module te permet de déplacer une tortue sur l'écran, 
+à l'aide des commandes que tu programmes.
+
+Pour pouvoir utiliser ce module, tu dois l'importer au début du programme::
 
     >>> import turtle
 
-Ensuite nous pouveons cette tortue à l'aide des commandes
+Ensuite tu peux donner un ordre à ta tortue::
 
     >>> turtle.forward(100)
 
-Cette commande fait avancer la tortue de 100 pixels.
+Cette commande fait avancer la tortue de 100 pixels. 
 Une commande pour contrôler la tortue a la forme suivante:
 
-- un premier mot qui est ``turtle``
-- un point ``.``
+- un premier mot ``turtle.`` (avec un point)
 - une commande (forward, backward, left, right, etc.)
 - des parenthèses ``( )``
-- un argumen numériques (distance, angle)
+- un argument numériques (distance, angle)
 
-Pour la faire reculer de 200 pixels::
+Pour faire faire reculer la tortue de 200 pixels écris ceci::
 
     >>> turtle.backward(200)
 
-Pour faire tourner la tortue 90 degrès à gauche::
+Pour faire tourner la tortue de 90 degrès vers laisse gauche::
 
     >>> turtle.left(90)
 
-Pour faire tourner la tortue 45 degrès à droite::
+Pour faire tourner la tortue de 45 degrès vers la droite::
 
     >>> turtle.right(45)
 
 La console est un outil très pratique. 
-A n'importe quel moment tu peux facilment tester quelque chose.
+A n'importe quel moment tu peux facilement tester des commandes.
 
 Remonter dans l'historique
 --------------------------
 
-Toutes les commandes que tu as entrez dans la consoles pendant une session,
-tu les peux facilment retrouver, modifier et réutiliser.
+Toutes les commandes que tu as entrées dans la console pendant une session,
+tu peux facilement les retrouver, les modifier et les réutiliser.
 
 .. image:: arrows.png
 
-Il suffit d'utiliser les flèches **haut** et **bas** pour te balader dans le historique.
+Il suffit d'utiliser les flèches **haut** et **bas** pour te balader 
+dans le historique de tes commandes.
 
 Essaye, c'est très pratique.
 
@@ -110,16 +114,24 @@ Ecrire un programme
 -------------------
 
 Tous ces commandes que tu peux écrire directement dans la console, 
-tu peux aussi les mettre dans un programme (qu'on appelle script).
-Une fois le programme terminé, tu peux l'executer à l'aide du bouton vert **Executer**.
+tu peux aussi les mettre dans un **programme** (qu'on appelle **script**).
 
-Le programme suivant dessine un triangle.
+Un programme n'est rien d'autre qu'une *liste de commandes qui dit à la tortue comment bouger*.
+Une fois le programme terminé, tu peux l'executer à l'aide du bouton vert **Executer**.
+A ce moment Thonny te demande de donner un nom à ton programme.
+
+Le programme suivant dessine un triangle. 
+Essaye de le programmer!
 
 .. image:: triangle.png
 
 .. literalinclude:: triangle.py
 
 :download:`triangle.py <triangle.py>`
+
+Tu remarque l'instruction ``turtle.done()`` sur la dernière ligne.
+Elle est nécessaire avec certains éditeurs de code pour garder la fenêtre ouverte.
+Avec Thonny cette ligne n'est pas nécessaire, et tu peux l'ignorer.
 
 
 Dessiner une maison
@@ -149,36 +161,36 @@ Tu peux ajouter une porte en dessinant encore un rectangle.
 Erreurs fréquentes
 ------------------
 
-Si tu fais une erreur avec le nom module, par exemple *turtel* au lieu de *turtle*,
-tu obtient un erreur de type ``ModuleNotFoundError``::
+Si tu fais une erreur avec le nom du module, par exemple *turtel* au lieu de *turtle*,
+tu obtiens une erreur de type ``ModuleNotFoundError``::
 
     >>> import turtel
-    Traceback (most recent call last):
-    File "<pyshell>", line 1, in <module>
     ModuleNotFoundError: No module named 'turtel'
 
-Si tu oublie de donner un argument à une fonction, 
-par exemple tu as oublié de mettre und distance pour la fonction *forward()*, 
-tu obtient une erreur de type ``TypeError``::
+Si tu oublies de donner un argument à une fonction, 
+par exemple si tu oublies de mettre und distance pour la fonction *forward()*, 
+tu obtiens une erreur de type ``TypeError``::
 
     >>> turtle.forward()
-    Traceback (most recent call last):
-    File "<pyshell>", line 1, in <module>
     TypeError: forward() missing 1 required positional argument: 'distance'
 
 Si tu fais une erreur dans le nom d'une fonction, par exemple *foreward* au lieu de *forward*, 
-tu obtient une erreur ``AttributeError``::
+tu obtiens une erreur de type ``AttributeError``::
 
     >>> turtle.foreward(100)
-    Traceback (most recent call last):
-    File "<pyshell>", line 1, in <module>
     AttributeError: module 'turtle' has no attribute 'foreward'
 
-Raccourcie ton code
--------------------
+**Conseil** 
+
+* Lis la dernière ligne du message d'erreur
+* Essaie de trouver l'erreur dans ton code
+* Corrige l'erreur et relance ton programme
+
+Raccourcir le code
+------------------
 
 Si tu veux raccourcir ton code, 
-tu peut importer toutes les commandes dans l'espace de ta session avec le symbole ``*``::
+tu peut importer toutes les commandes dans l'espace de ta session avec le symbole ``*`` ::
 
     >>> from turtle import *
 
@@ -187,7 +199,7 @@ Ensuite tu dois créer un objet ``Screen()`` qui ouvre une fenêtre::
     >>> Screen()
     <turtle._Screen object at 0x1063f68d0>
 
-Maintenant tu peux directement utiliser les fonctions, sans les précéder de ``turtle.``::
+Maintenant tu peux directement utiliser les fonctions, sans les précéder de ``turtle.`` ::
 
     >>> forward(100)
     >>> left(45)
@@ -195,7 +207,7 @@ Maintenant tu peux directement utiliser les fonctions, sans les précéder de ``
 
 Si tu veux écrire tes commandes encore plus courtes, 
 tu peux utiliser les raccourcis à deux lettres: 
-``fd`` (forward), ``bk`` (back), ``lt`` (left) et ``rt`` (right)::
+``fd`` (forward), ``bk`` (back), ``lt`` (left) et ``rt`` (right) ::
 
     >>> fd(100)
     >>> lt(45)
