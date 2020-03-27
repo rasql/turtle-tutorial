@@ -9,6 +9,7 @@ Un arbre récursif
 .. image:: tree1.png
 
 .. literalinclude:: tree1.py
+   :lines: 2-
 
 :download:`tree1.py <tree1.py>`
 

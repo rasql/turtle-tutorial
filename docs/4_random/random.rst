@@ -28,6 +28,7 @@ Pour obtenir une position aléatoire, nous devons calculer deux valeurs, x et y.
 .. image:: random1.png
 
 .. literalinclude:: random1.py
+   :lines: 2-
 
 :download:`random1.py <random1.py>`
 
@@ -43,6 +44,7 @@ constante, et choisir l'angle du changement de direction à chaque itération co
 .. image:: random2.png
 
 .. literalinclude:: random2.py
+   :lines: 2-
 
 :download:`random2.py <random2.py>`
 
@@ -60,6 +62,7 @@ dans l'intervalle [10, 50] pour dessiner un cercle::
 .. image:: random3.png
 
 .. literalinclude:: random3.py
+   :lines: 2-
 
 :download:`random3.py <random3.py>`
 
@@ -81,6 +84,7 @@ couleur pour la tortue::
 .. image:: random4.png
 
 .. literalinclude:: random4.py
+   :lines: 2-
 
 :download:`random4.py <random4.py>`
 

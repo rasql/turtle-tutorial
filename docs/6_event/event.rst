@@ -36,6 +36,7 @@ Essaye maintenant de contrôler la tortue avec les touches WASD et de faire un d
 .. image:: event1.png
 
 .. literalinclude:: event1.py
+   :lines: 2-
 
 :download:`event1.py <event1.py>`
 
@@ -58,6 +59,7 @@ Tu peux combiner les touche WASD avec les flèches.
 Ceci te donne deux méthodes différentes pour bouger la tortue.
 
 .. literalinclude:: event2.py
+   :lines: 2-
 
 :download:`event2.py <event2.py>`
 
@@ -91,6 +93,7 @@ Ceci te permet de dessiner des lignes séparées.
 Voici le programme en entier.
 
 .. literalinclude:: event3.py
+   :lines: 2-
 
 :download:`event3.py <event3.py>`
 
@@ -111,6 +114,7 @@ tu peux écrire ::
 Avec les fonctions lambda notre programme devient très court.
 
 .. literalinclude:: event4.py
+   :lines: 2-
 
 :download:`event4.py <event4.py>`
 
@@ -152,6 +156,7 @@ les touches de direction pour contrôler le mouvement de Bob.
 .. image:: event5.png
 
 .. literalinclude:: event5.py
+   :lines: 2-
 
 :download:`event5.py <event5.py>`
 
@@ -182,6 +187,7 @@ Avec la touche **Left/Right** nous incrémentons ou décrémentons la variable x
 .. image:: event6.png
 
 .. literalinclude:: event6.py
+   :lines: 2-
 
 :download:`event6.py <event6.py>`
 
@@ -207,6 +213,7 @@ Toutes les lignes sont des segments droit, et la tortue ne change pas d'orientat
 .. image:: event7.png
 
 .. literalinclude:: event7.py
+   :lines: 2-
 
 :download:`event7.py <event7.py>`
 

@@ -128,6 +128,7 @@ Essaye de le programmer!
 .. image:: triangle.png
 
 .. literalinclude:: triangle.py
+   :lines: 2-
 
 :download:`triangle.py <triangle.py>`
 
@@ -144,6 +145,7 @@ En utilisant des angles de 45 et 90 degrés, tu peux dessiner une maison.
 .. image:: house.png
 
 .. literalinclude:: house.py
+   :lines: 2-
 
 :download:`house.py <house.py>`
 
@@ -156,6 +158,7 @@ Tu peux ajouter une porte en dessinant encore un rectangle.
 .. image:: house2.png
 
 .. literalinclude:: house2.py
+   :lines: 2-
 
 :download:`house2.py <house2.py>`
 

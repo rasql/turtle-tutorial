@@ -23,6 +23,7 @@ Ceci lui permet de dessiner des lignes séparées:
 .. image:: draw1.png
 
 .. literalinclude:: draw1.py
+   :lines: 2-
 
 :download:`draw1.py <draw1.py>`
 
@@ -37,6 +38,7 @@ La commande ``goto(0, 20)`` va téléporter la tortue à la position (x=0, y=20)
 .. image:: draw2.png
 
 .. literalinclude:: draw2.py
+   :lines: 2-
 
 :download:`draw2.py <draw2.py>`
 
@@ -49,6 +51,7 @@ Tu peux modifier l'épaisseur du stylo avec la commande ``width(2)``.
 .. image:: draw3.png
 
 .. literalinclude:: draw3.py
+   :lines: 2-
 
 :download:`draw3.py <draw3.py>`
 
@@ -78,6 +81,7 @@ Par exemple:
 .. image:: draw4.png
 
 .. literalinclude:: draw4.py
+   :lines: 2-
 
 :download:`draw4.py <draw4.py>`
 
@@ -97,6 +101,7 @@ Ensuite il faut entourer la forme à remplir, par exemple le triangle, avec les 
 .. image:: draw5.png
 
 .. literalinclude:: draw5.py
+   :lines: 2-
 
 :download:`draw5.py <draw5.py>`
 
@@ -116,6 +121,7 @@ La taille de la police par défaut est très petite. Il est préférable que tu 
 .. image:: draw6.png
 
 .. literalinclude:: draw6.py
+   :lines: 2-
 
 :download:`draw6.py <draw6.py>`
 
@@ -129,6 +135,7 @@ Dans le programme ci-dessous, la tortue dessine deux cercles.
 .. image:: draw7.png
 
 .. literalinclude:: draw7.py
+   :lines: 2-
 
 :download:`draw7.py <draw7.py>`
 

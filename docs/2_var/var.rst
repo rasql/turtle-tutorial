@@ -25,6 +25,7 @@ Tu peux définir ces valeurs au début du programme avec des variables.
 Dans le programme tu peut ensuite utiliser ces variables à la places de valeurs numériques.
 
 .. literalinclude:: var1.py
+   :lines: 2-
 
 .. image:: var1.png
 
@@ -41,6 +42,7 @@ A chaque fois nous dessinons un triangle qui utilise la valeur de cette variable
 .. image:: var2.png
 
 .. literalinclude:: var2.py
+   :lines: 2-
 
 :download:`var2.py <var2.py>`
 
@@ -65,6 +67,7 @@ Le programme suivant demande également la hauteur du rectangle et met cette val
 la variable ``b``. 
 
 .. literalinclude:: var3.py
+   :lines: 2-
 
 Une fois les deux valeurs obtenues, la tortue commence à dessiner le rectangle.
 
@@ -90,5 +93,6 @@ Les 4 angles sont calculés par la suite en utilisant cette variable.
 .. image:: var4.png
 
 .. literalinclude:: var4.py
+   :lines: 2-
 
 :download:`var4.py <var4.py>`

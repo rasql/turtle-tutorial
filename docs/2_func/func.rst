@@ -65,6 +65,7 @@ Voici la fonction ``triangle()`` appelée trois fois::
 .. image:: func1.png
 
 .. literalinclude:: func1.py
+   :lines: 2-
 
 :download:`func1.py <func1.py>`
 
@@ -101,6 +102,7 @@ Et finalement tu peux appeler 3 fois la fonction ``square``::
 .. image:: func2.png
 
 .. literalinclude:: func2.py
+   :lines: 2-
 
 :download:`func2.py <func2.py>`
 
@@ -116,6 +118,7 @@ Voici un exemple:
 .. image:: house.png
 
 .. literalinclude:: house.py
+   :lines: 2-
 
 :download:`house.py <house.py>`
 
@@ -138,5 +141,6 @@ Ensuite tu peux combiner 5 pétales pour dessiner une fleur.
 .. image:: flower.png
 
 .. literalinclude:: flower.py
+   :lines: 2-
 
 :download:`flower.py <flower.py>`

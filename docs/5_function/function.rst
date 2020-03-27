@@ -36,6 +36,7 @@ Dans la boucle nous choisissons 10 fois une position aléatoire ou dessiner l'he
 .. image:: function1.png
 
 .. literalinclude:: function1.py
+   :lines: 2-
 
 :download:`function1.py <function1.py>`
 
@@ -72,6 +73,7 @@ Nous pouvons maintenant appeler la fonction 3 fois avec des arguments différent
 .. image:: function2.png
 
 .. literalinclude:: function2.py
+   :lines: 2-
 
 :download:`function2.py <function2.py>`
 
@@ -96,5 +98,6 @@ On appelle maintenant la fonction en indiquant 4 arguments::
 .. image:: function3.png
 
 .. literalinclude:: function3.py
+   :lines: 2-
 
 :download:`function3.py <function3.py>`

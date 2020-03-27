@@ -20,6 +20,7 @@ Dessiner un carré
 On peut dessiner un carré en répétant 4 fois ces instructions
 
 .. literalinclude:: square1.py
+   :lines: 2-
 
 :download:`square1.py <square1.py>`
 
@@ -47,6 +48,7 @@ Le programme du carrée devient beaucoup plus compact si on utilise une boucle.
 Au lieu de 8 lignes, on n'auras besoin que de 3 lignes.
 
 .. literalinclude:: square2.py
+   :lines: 2-
 
 :download:`square2.py <square2.py>`
 
@@ -67,6 +69,7 @@ Nous allons utiliser la fonction ``write(i)`` pour
 .. image:: square3.png
 
 .. literalinclude:: square3.py
+   :lines: 2-
 
 :download:`square3.py <square3.py>`
 
@@ -93,6 +96,7 @@ L'opérateur ``+=`` est un raccourci pour dire ``a = a + 20``
 .. image:: square4.png
 
 .. literalinclude:: square4.py
+   :lines: 2-
 
 :download:`square4.py <square4.py>`
 
@@ -110,6 +114,7 @@ La variable ``a`` va donc prendre successivement les valeurs 40, 60, 80, 100, 12
 .. image:: square5.png
 
 .. literalinclude:: square5.py
+   :lines: 2-
 
 :download:`square5.py <square5.py>`
 
@@ -125,6 +130,7 @@ Si le polygone possède ``n = 6`` sommet, la tortue doit tourner à chaque somme
 .. image:: polygon1.png
 
 .. literalinclude:: polygon1.py
+   :lines: 2-
 
 :download:`polygon1.py <polygon1.py>`
 
@@ -145,6 +151,7 @@ un pentagone et un hexagone.
 .. image:: polygon2.png
 
 .. literalinclude:: polygon2.py
+   :lines: 2-
 
 :download:`polygon2.py <polygon2.py>`
 
@@ -173,6 +180,7 @@ Tu peux constater que pour ``m=1``, tu obtiens le polygone ordinaire, l'angle va
 .. image:: polygon3.png
 
 .. literalinclude:: polygon3.py
+   :lines: 2-
 
 :download:`polygon3.py <polygon3.py>`
 
@@ -189,6 +197,7 @@ avant et après les lignes de code qui créent le dessin::
 .. image:: polygon4.png
 
 .. literalinclude:: polygon4.py
+   :lines: 2-
 
 :download:`polygon4.py <polygon4.py>`
  
@@ -223,6 +232,7 @@ Arrivé du coté gauche de l'arc nous faisons ceci:
 .. image:: rainbow.png
 
 .. literalinclude:: rainbow.py
+   :lines: 2-
 
 :download:`rainbow.py <rainbow.py>`
 
