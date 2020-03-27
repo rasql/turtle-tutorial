@@ -23,7 +23,8 @@ une tortue pour faire des dessins. Mais le message principale c'est:
    3_loop/loop
    4_random/random
    5_function/function
-
+   6_event/event
+   7_recursion/recursion
 
 Indices and tables
 ==================
