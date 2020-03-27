@@ -1,17 +1,17 @@
 # define a function
-import turtle
+from turtle import *
 
 def triangle():
-    turtle.forward(100)
-    turtle.left(120)
-    turtle.forward(100)
-    turtle.left(120)
-    turtle.forward(100)
-    turtle.left(120)
-    turtle.forward(100)
+    forward(100)
+    left(120)
+    forward(100)
+    left(120)
+    forward(100)
+    left(120)
+    forward(100)
 
 triangle()
 triangle()
 triangle()
 
-turtle.done()
+done()

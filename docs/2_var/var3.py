@@ -1,16 +1,16 @@
 # numeric input
-import turtle
+from turtle import *
 
-a = turtle.numinput('Rectangle', 'largeur')
-b = turtle.numinput('Rectangle', 'hauteur')
+a = numinput('Rectangle', 'largeur')
+b = numinput('Rectangle', 'hauteur')
 
-turtle.forward(a)
-turtle.left(90)
-turtle.forward(b)
-turtle.left(90)
-turtle.forward(a)
-turtle.left(90)
-turtle.forward(b)
-turtle.left(90)
+forward(a)
+left(90)
+forward(b)
+left(90)
+forward(a)
+left(90)
+forward(b)
+left(90)
 
-turtle.done()
+done()

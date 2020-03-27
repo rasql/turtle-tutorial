@@ -1,6 +1,6 @@
 # Needs Pillow and ghostscript installed
 # https://stackoverflow.com/questions/41940945/saving-canvas-from-tkinter-to-file
-import turtle
+from turtle import *
 import time
 import io
 from PIL import Image

@@ -1,11 +1,11 @@
 # draw a triangle
-import turtle
+from turtle import *
 
-turtle.forward(200)
-turtle.left(120)
-turtle.forward(200)
-turtle.left(120)
-turtle.forward(200)
-turtle.left(120)
+forward(200)
+left(120)
+forward(200)
+left(120)
+forward(200)
+left(120)
 
-turtle.done()
+done()

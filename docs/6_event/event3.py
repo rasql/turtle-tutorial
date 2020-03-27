@@ -1,32 +1,32 @@
 # using various keys to control the turtle
-import turtle
+from turtle import *
 
-def forward():
-    turtle.forward(30)
+def move_forward():
+    forward(30)
 
-def backward():
-    turtle.backward(30)
+def move_backward():
+    backward(30)
 
-def left():
-    turtle.left(30)
+def turn_left():
+    left(30)
 
-def right():
-    turtle.right(30)
+def turn_right():
+    right(30)
 
-turtle.onkey(forward, 'Up')
-turtle.onkey(backward, 'Down')
-turtle.onkey(left, 'Left')
-turtle.onkey(right, 'Right')
+onkey(move_forward, 'Up')
+onkey(move_backward, 'Down')
+onkey(turn_left, 'Left')
+onkey(turn_right, 'Right')
 
-turtle.onkey(turtle.home, 'h')
-turtle.onkey(turtle.clear, 'c')
-turtle.onkey(turtle.reset, 'r')
-turtle.onkey(turtle.bye, 'q')
+onkey(home, 'h')
+onkey(clear, 'c')
+onkey(reset, 'r')
+onkey(bye, 'q')
 
-turtle.onkey(turtle.up, 'u')
-turtle.onkey(turtle.down, 'd')
+onkey(up, 'u')
+onkey(down, 'd')
 
-turtle.listen()
+listen()
 
-turtle.forward(0)
-turtle.done()
+forward(0)
+done()

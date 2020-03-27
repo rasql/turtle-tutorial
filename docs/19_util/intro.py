@@ -1,11 +1,11 @@
 # draw turtle graphics and record it to an animated GIF
-import turtle
+from turtle import *
 from PIL import Image
 
-turtle.forward(100)
-turtle.left(90)
-turtle.forward(100)
+forward(100)
+left(90)
+forward(100)
 
-turtle.done()
+done()
 
 

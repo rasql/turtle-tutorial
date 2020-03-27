@@ -1,23 +1,23 @@
 # using the arrow key to move the turtle
-import turtle
+from turtle import *
 
-def forward():
-    turtle.forward(30)
+def move_forward():
+    forward(30)
 
-def backward():
-    turtle.backward(30)
+def move_backward():
+    backward(30)
 
-def left():
-    turtle.left(30)
+def turn_left():
+    left(30)
 
-def right():
-    turtle.right(30)
+def turn_right():
+    right(30)
 
-turtle.onkey(forward, 'Up')
-turtle.onkey(backward, 'Down')
-turtle.onkey(left, 'Left')
-turtle.onkey(right, 'Right')
-turtle.listen()
+onkey(move_forward, 'Up')
+onkey(move_backward, 'Down')
+onkey(turn_left, 'Left')
+onkey(turn_right, 'Right')
+listen()
 
-turtle.forward(0)
-turtle.done()
+forward(0)
+done()

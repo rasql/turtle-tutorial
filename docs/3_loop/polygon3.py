@@ -1,13 +1,13 @@
 # drawing a star
-import turtle
+from turtle import *
 
 a = 200
 n = 5
 m = 2
 
 for i in range(n):
-    turtle.forward(a)
-    turtle.dot()
-    turtle.left(360/n*m)
+    forward(a)
+    dot()
+    left(360/n*m)
 
-turtle.done()
+done()

@@ -1,24 +1,24 @@
 # define a function
-import turtle
+from turtle import *
 
 def house():
-    turtle.begin_fill()
-    turtle.forward(141)
-    turtle.left(90)
-    turtle.forward(100)
-    turtle.left(45)
-    turtle.forward(100)
-    turtle.left(90)
-    turtle.forward(100)
-    turtle.left(45)
-    turtle.forward(100)
-    turtle.left(90)
-    turtle.end_fill()
+    begin_fill()
+    forward(141)
+    left(90)
+    forward(100)
+    left(45)
+    forward(100)
+    left(90)
+    forward(100)
+    left(45)
+    forward(100)
+    left(90)
+    end_fill()
 
-turtle.width(4)
+width(4)
 house()
-turtle.goto(-100, -20)
-turtle.fillcolor('yellow')
+goto(-100, -20)
+fillcolor('yellow')
 house()
 
-turtle.done()
+done()

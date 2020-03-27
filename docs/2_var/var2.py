@@ -1,14 +1,14 @@
 # variable used inside a function
-import turtle
+from turtle import *
 
 def triangle():
-    turtle.forward(a)
-    turtle.left(120)
-    turtle.forward(a)
-    turtle.left(120)
-    turtle.forward(a)
-    turtle.left(120)
-    turtle.forward(a)
+    forward(a)
+    left(120)
+    forward(a)
+    left(120)
+    forward(a)
+    left(120)
+    forward(a)
 
 a = 50
 triangle()
@@ -17,4 +17,4 @@ triangle()
 a = 150
 triangle()
 
-turtle.done()
+done()

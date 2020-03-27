@@ -14,22 +14,22 @@ Souvent ce sont les touches WASD du clavier.
 .. image:: wasd.png
 
 Tu peux programmer ta tortue pour la bouger avec ces touches.
-La fonction ``onkey(forward, 'w')`` associe la touche **W** avec la fonction ``forward``.
+La fonction ``onkey(move_forward, 'w')`` associe la touche **W** avec la fonction ``move_forward``.
 
 Tu dois définir cette fonction, par exemple avancer de 30 pixels::
 
-    def forward():
-        turtle.forward(30)
+    def move_forward():
+        forward(30)
 
 On appelle ça de définir une fonction de **callback** pour l'événement. 
 Voici la définition des 4 fonctions de callback pour les 4 touches de direction WASD::
 
-    turtle.onkey(forward, 'w')
-    turtle.onkey(backward, 's')
-    turtle.onkey(left, 'a')
-    turtle.onkey(right, 'd')
+    onkey(move_forward, 'w')
+    onkey(move_backward, 's')
+    onkey(turn_left, 'a')
+    onkey(turn_right, 'd')
 
-Pour que la tortue commence à écouter aux événements, tu dois appeler ``turtle.listen()``.
+Pour que la tortue commence à écouter aux événements, tu dois appeler ``listen()``.
 
 Essaye maintenant de contrôler la tortue avec les touches WASD et de faire un dessin.
 
@@ -49,10 +49,10 @@ Si tu préfère les flèches, tu peux aussi programmer ta tortue pour la bouger 
 Les 4 touches de direction ont les noms **Up, Down, Left, Right**.
 Voici la défintion des 4 fonctions callback::
 
-    turtle.onkey(forward, 'Up')
-    turtle.onkey(backward, 'Down')
-    turtle.onkey(left, 'Left')
-    turtle.onkey(right, 'Right')
+    onkey(move_forward, 'Up')
+    onkey(move_backward, 'Down')
+    onkey(turn_left, 'Left')
+    onkey(turn_right, 'Right')
 
 Tu peux combiner les touche WASD avec les flèches. 
 Ceci te donne deux méthodes différentes pour bouger la tortue.
@@ -74,15 +74,15 @@ Tu peux ajouter d'autres fonctions, comme:
 Comme ces fonctions n'ont pas d'argument, tu n'as pas besoin de redéfinir séparément ces fonctions.
 Tu peux directement mettre leur nom (sans les parenthèses) dans la définition des fonctions callback::
 
-    turtle.onkey(turtle.home, 'h')
-    turtle.onkey(turtle.clear, 'c')
-    turtle.onkey(turtle.reset, 'r')
-    turtle.onkey(turtle.bye, 'q')
+    onkey(home, 'h')
+    onkey(clear, 'c')
+    onkey(reset, 'r')
+    onkey(bye, 'q')
 
 Tu peux également ajouter des raccourcis pour faire monter et descendre le stylo::
 
-    turtle.onkey(turtle.up, 'u')
-    turtle.onkey(turtle.down, 'd')
+    onkey(up, 'u')
+    onkey(down, 'd')
 
 Ceci te permet de dessiner des lignes séparées.
 
@@ -101,12 +101,12 @@ La **fonction lambda** est une courte fonction définit définit en une seul lig
 Cette fonction ne porte pas de nom, et on l'appelle aussi **fonction anonyme**. 
 Au lieu d'écrire ::
 
-    def forward():
-        turtle.forward(30)
+    def move_forward():
+        forward(30)
 
 tu peux écrire ::
 
-    lambda : turtle.forward(30)
+    lambda : forward(30)
 
 Avec les fonctions lambda notre programme devient très court.
 
@@ -130,8 +130,8 @@ et leur donner des noms différents.
 
 Ceci définit deux objets différents: une tortue **Alice** et une tortue **Bob**::
 
-    alice = turtle.Turtle()
-    bob = turtle.Turtle()
+    alice = Turtle()
+    bob = Turtle()
 
 Un objet a des **attributs** tel que sa couleur. Tu peux donner une couleur différente à 
 Alice et à Bob::
@@ -191,16 +191,16 @@ Allers vers la souris
 Tu peux aussi reagir au clic de la souris.
 Utilise la fonction ::
 
-    turtle.onscreenclick(move)
+    onscreenclick(move)
 
 pour désigner la fonction ``move`` comme fonction de callback pour le clic de la souris. ::
 
     def move(x, y):
-        turtle.setposition(x, y)
+        setposition(x, y)
 
 Tu pourrais encore raccourcir ceci et directement déclarer::
 
-    turtle.onscreenclick(turtle.setposition)
+    onscreenclick(setposition)
 
 Toutes les lignes sont des segments droit, et la tortue ne change pas d'orientation.
 

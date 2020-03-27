@@ -2,7 +2,7 @@ Dessiner
 ========
 
 Tu as vu les 4 commandes de base pour déplacer la tortue: 
-*forward, backward, left* et *right*. Mais tu peux contrôler d'autres aspcets du dessin:
+*forward, backward, left* et *right*. Mais tu peux contrôler d'autres aspects du dessin:
 
 - épaisseur du trait
 - couleur du trait
@@ -12,13 +12,13 @@ En plus tu peux aussi:
 
 - monter et descendre le stylo
 - dessiner des cercles
-- ajouter du text
+- ajouter du texte
 
 Monter le stylo
 ---------------
 
-La tortue peut monter et descendre son style.
-Ceci lui permet de dessiner des lignes séparées.
+La tortue peut monter et descendre son stylo.
+Ceci lui permet de dessiner des lignes séparées:
 
 .. image:: draw1.png
 
@@ -30,9 +30,9 @@ Ceci lui permet de dessiner des lignes séparées.
 Téléporter la tortue
 --------------------
 
-La tortue peux aller directement (en ligne droite) à n'importer quel position 
+La tortue peut aller directement (en ligne droite) à n'importer quel position 
 indiquée par des coordonnés (x, y).
-La commande ``turtle.goto(0, 20)`` va téléporter la tortue à la position (x=0, y=20).
+La commande ``goto(0, 20)`` va téléporter la tortue à la position (x=0, y=20).
 
 .. image:: draw2.png
 
@@ -44,7 +44,7 @@ La commande ``turtle.goto(0, 20)`` va téléporter la tortue à la position (x=0
 L'épaisseur de ligne
 --------------------
 
-Tu peux modifier l'épaisser du stylo avec la commande ``turtle.width(2)``.
+Tu peux modifier l'épaisseur du stylo avec la commande ``width(2)``.
 
 .. image:: draw3.png
 
@@ -56,7 +56,7 @@ Tu peux modifier l'épaisser du stylo avec la commande ``turtle.width(2)``.
 La couleur de ligne
 -------------------
 
-Tu peux modifier la couleur du stylo avec la commande ``turtle.pencolor('blue')``.
+Tu peux modifier la couleur du stylo, par exemple en blue, avec la commande ``pencolor('blue')``.
 
 Voici les couleurs que tu peux choisir: 
 
@@ -64,7 +64,16 @@ Voici les couleurs que tu peux choisir:
 blue, sky blue, cyan, turquoise, lightgreen, green, darkgreen, chocolate, 
 brown, black, gray, white*
 
-N'oublies pas de mettre le nom de couleur entre apostrophes.
+Tu en trouve une centaine de couleurs sur ce site: 
+http://cng.seas.rochester.edu/CNG/docs/x11color.html
+
+Fais attention de mettre le nom de la couleur entre apostrophes.
+Par exemple:
+
+- ``'Pink'``
+- ``'HotPink'``
+- ``'DeepPink'``
+- ``'Fuchsia'``
 
 .. image:: draw4.png
 
@@ -78,12 +87,12 @@ Remplir une forme
 
 Il est possible de remplir une forme d'une couleur.
 
-Avec la commande ``turtle.fillcolor('green')`` tu peux choisir une couleur de remplissage.
+Avec la commande ``fillcolor('green')`` tu peux choisir une couleur de remplissage.
 
 Ensuite il faut entourer la forme à remplir, par exemple le triangle, avec les deux commandes::
 
-    turtle.begin_fill()
-    turtle.end_fill()
+    begin_fill()
+    end_fill()
 
 .. image:: draw5.png
 
@@ -95,9 +104,14 @@ Ensuite il faut entourer la forme à remplir, par exemple le triangle, avec les 
 Ajouter un texte
 ----------------
 
-Il est possible d'écrire un texte à la position de la tortue.
+Il est possible d'écrire un texte à la position de la tortue avec la commande ``write()``.
+Cette commande peut avoir plusieurs arguments. Nous allons en voir deux:
+le premier est le texte que tu veux écrire (à mettre entre apostrophe), 
+le deuxième définit la police du texte, ainsi que la taille de la police::
 
-La police par défaut est très petit. Il est préférable que tu augmente la taille.
+    write('texte', font=('police', taille))
+
+La taille de la police par défaut est très petite. Il est préférable que tu l'augmentes.
 
 .. image:: draw6.png
 
@@ -109,12 +123,12 @@ La police par défaut est très petit. Il est préférable que tu augmente la ta
 Dessiner un cercle
 ------------------
 
-La fonction ``turtle.circle(40)`` permet de dessiner un cercle avec un rayon de 40 pixels.
-Dans le programme ci-dessous la tortue dessine deux cercles.
+La fonction ``circle(40)`` permet de dessiner un cercle avec un rayon de 40 pixels.
+Dans le programme ci-dessous, la tortue dessine deux cercles.
 
-.. image:: circle.png
+.. image:: draw7.png
 
-.. literalinclude:: circle.py
+.. literalinclude:: draw7.py
 
-:download:`circle.py <circle.py>`
+:download:`draw7.py <draw7.py>`
 

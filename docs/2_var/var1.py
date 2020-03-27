@@ -1,18 +1,18 @@
 # variable
-import turtle
+from turtle import *
 
 a = 200
 b = 100
 
-turtle.forward(a)
-turtle.left(90)
-turtle.forward(b)
-turtle.left(90)
-turtle.forward(a)
-turtle.left(90)
-turtle.forward(b)
-turtle.left(90)
+forward(a)
+left(90)
+forward(b)
+left(90)
+forward(a)
+left(90)
+forward(b)
+left(90)
 
-turtle.done()
+done()
 
 

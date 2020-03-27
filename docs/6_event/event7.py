@@ -1,11 +1,11 @@
 # controlling two turtles
-import turtle
+from turtle import *
 
 def move(x, y):
-    turtle.setposition(x, y)
+    setposition(x, y)
 
-turtle.onscreenclick(move)
-turtle.listen()
+onscreenclick(move)
+listen()
 
-turtle.forward(0)
-turtle.done()
+forward(0)
+done()

@@ -2,7 +2,7 @@ L'aléatoire
 ===========
 
 L'aléatoire est ce qui relève du hasard. 
-Quand on roule un dés, son résultat est aléatoire.
+Quand on roule un dé, son résultat est aléatoire.
 
 Dans des jeux ou des animations, il est souvent nécessaire de pouvoir calculer des valeurs aléatores. 
 Le module ``random`` permet de trouver des valeurs aléatoires.
@@ -22,8 +22,8 @@ Pour pouvoir utiliser des fonctions aléatoirs nous devons d'abord importer le m
     import random
 
 La fonction ``random.randint(-100, 100)`` retourne une valeur aléatoire 
-qui se situe entre les deux valeurs -100 et 100. Nous calculons deux valeurs, x et y, 
-pour obtenir une position aléatoire.
+qui se situe entre les deux valeurs -100 et 100.  
+Pour obtenir une position aléatoire, nous devons calculer deux valeurs, x et y.
 
 .. image:: random1.png
 
@@ -35,8 +35,8 @@ pour obtenir une position aléatoire.
 Angle aléatoire
 ---------------
 
-Pour simulier la marche aléatoire d'une fourmi, nous pouvons garder la distance avancéé
-constante, et chosir l'angle à tourner à chaque itération comme::
+Pour simuler la marche aléatoire d'une fourmi, nous pouvons garder la distance de chaque pas
+constante, et choisir l'angle du changement de direction à chaque itération comme ceci::
 
     angle = random.randint(-90, 90)
 
@@ -51,11 +51,11 @@ Taille aléatoire
 ----------------
 
 Ci-dessous la tortue va à une position (x, y) aléatoire et choisit une taille aléatoire 
-dans l'intervalle [10, 50] pour le cercle à dessiner::
+dans l'intervalle [10, 50] pour dessiner un cercle::
 
     size = random.randint(10, 50)  
-    turtle.goto(x, y)
-    turtle.dot(size)
+    goto(x, y)
+    dot(size)
 
 .. image:: random3.png
 
@@ -68,15 +68,15 @@ Couleur aléatoire
 -----------------
 
 La fonction ``random.choice(list)`` permet de choisir un élément dans une liste. 
-Il faut d'abord definir une liste::
+Il faut d'abord définir une liste::
 
     colors = ('red', 'blue', 'green', 'violet', 'yellow', 'cyan', 'orange', 'magenta')
 
-Ensuite un élément aléatoire est choisi de cette liste et utilisé comme nouvelle
+Ensuite un élément aléatoire est choisi dans cette liste et utilisé comme nouvelle
 couleur pour la tortue::
 
     color = random.choice(colors)
-    turtle.pencolor(color)
+    pencolor(color)
 
 .. image:: random4.png
 

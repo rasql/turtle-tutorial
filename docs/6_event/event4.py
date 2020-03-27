@@ -1,11 +1,11 @@
 # using key events with a lambda function
-import turtle
+from turtle import *
 
-turtle.onkey(lambda: turtle.forward(30), 'Up')
-turtle.onkey(lambda: turtle.backward(30), 'Down')
-turtle.onkey(lambda: turtle.left(30), 'Left')
-turtle.onkey(lambda: turtle.right(30), 'Right')
-turtle.listen()
+onkey(lambda: forward(30), 'Up')
+onkey(lambda: backward(30), 'Down')
+onkey(lambda: left(30), 'Left')
+onkey(lambda: right(30), 'Right')
+listen()
 
-turtle.forward(0)
-turtle.done()
+forward(0)
+done()

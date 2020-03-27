@@ -1,25 +1,24 @@
 # draw a house
-import turtle
+from turtle import *
 
-turtle.forward(141)
-turtle.left(90)
-turtle.forward(100)
-turtle.left(45)
-turtle.forward(100)
-turtle.left(90)
-turtle.forward(100)
-turtle.left(45)
-turtle.forward(100)
+forward(141)
+left(90)
+forward(100)
+left(45)
+forward(100)
+left(90)
+forward(100)
+left(45)
+forward(100)
 
 # draw a door
-turtle.left(90)
-turtle.forward(50)
-turtle.left(90)
-turtle.forward(50)
-turtle.right(90)
-turtle.forward(30)
-turtle.right(90)
-turtle.forward(50)
+left(90)
+forward(50)
+left(90)
+forward(50)
+right(90)
+forward(30)
+right(90)
+forward(50)
 
-turtle.done()
-
+done()

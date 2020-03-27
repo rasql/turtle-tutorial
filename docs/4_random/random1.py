@@ -1,13 +1,13 @@
 # random position
-import turtle
+from turtle import *
 import random
 
-turtle.dot()
+dot()
 for i in range(20):
     x = random.randint(-200, 200)
     y = random.randint(-100, 100)
-    turtle.goto(x, y)
-    turtle.dot()
+    goto(x, y)
+    dot()
 
-turtle.done()
+done()
     

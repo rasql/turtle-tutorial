@@ -65,7 +65,7 @@ events
 onkey(fonction, 'key')
 ontimer((fonction, t)
 
-turtle.done()
+done()
 
 
 Dessins

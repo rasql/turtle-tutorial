@@ -1,16 +1,16 @@
 # fill a shape
-import turtle
+from turtle import *
 
-turtle.width(5)
-turtle.fillcolor('green')
+width(5)
+fillcolor('green')
 
-turtle.begin_fill()
-turtle.forward(200)
-turtle.left(120)
-turtle.forward(200)
-turtle.left(120)
-turtle.forward(200)
-turtle.left(120)
-turtle.end_fill()
+begin_fill()
+forward(200)
+left(120)
+forward(200)
+left(120)
+forward(200)
+left(120)
+end_fill()
 
-turtle.done()
+done()

@@ -1,8 +1,8 @@
 # square with for loop
-import turtle
+from turtle import *
 
 for i in range(4):
-    turtle.forward(100)
-    turtle.left(90)
+    forward(100)
+    left(90)
 
-turtle.done()
+done()

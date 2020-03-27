@@ -1,10 +1,10 @@
 # square with for loop
-import turtle
+from turtle import *
 
 for i in range(4):
-    turtle.write(i, font=(None, '18'))
-    turtle.forward(100)
-    turtle.left(90)
-    turtle.dot()
+    write(i, font=(None, '18'))
+    forward(100)
+    left(90)
+    dot()
 
-turtle.done()
+done()

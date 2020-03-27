@@ -1,10 +1,10 @@
 # pen up/down
-import turtle
+from turtle import *
 
-turtle.forward(100)
-turtle.up()
-turtle.forward(50)
-turtle.down()
-turtle.forward(50)
+forward(100)
+up()
+forward(50)
+down()
+forward(50)
 
-turtle.done()
+done()

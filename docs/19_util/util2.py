@@ -1,4 +1,4 @@
-import turtle
+from turtle import *
 
 turtle.setup (width=300, height=300)
 turtle.shape('turtle')

@@ -1,16 +1,16 @@
 # change pen color
-import turtle
+from turtle import *
 
-turtle.width(5)
-turtle.forward(200)
-turtle.left(90)
+width(8)
+forward(200)
+left(90)
 
-turtle.pencolor('blue')
-turtle.forward(100)
-turtle.left(90)
+pencolor('pink')
+forward(100)
+left(90)
 
-turtle.pencolor('green')
-turtle.forward(300)
-turtle.left(90)
+pencolor('fuchsia')
+forward(300)
+left(90)
 
-turtle.done()
+done()

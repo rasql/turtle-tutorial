@@ -1,12 +1,14 @@
 # welcome to EPFL
-import turtle
+from turtle import *
 
-turtle.color('red', 'green')
-turtle.shape('turtle')
-turtle.speed(1)
+color('red', 'green')
+shape('turtle')
+speed(1)
 
-turtle.write('EPFL', font=(None, 36))
+write('EPFL', font=(None, 36))
 
 for i in range(6):
-    turtle.forward(100)
-    turtle.left(60)
+    forward(100)
+    left(60)
+
+done()

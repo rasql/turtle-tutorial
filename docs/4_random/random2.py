@@ -1,12 +1,12 @@
 # random direction
-import turtle
+from turtle import *
 import random
 
-turtle.dot()
+dot()
 for i in range(100):
     angle = random.randint(-90, 90)
-    turtle.forward(20)
-    turtle.left(angle)
-    turtle.dot()
+    forward(20)
+    left(angle)
+    dot()
 
-turtle.done()
+done()

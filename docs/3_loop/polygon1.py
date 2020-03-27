@@ -1,10 +1,10 @@
 # polygon
-import turtle
+from turtle import *
 
 n = 6
 for i in range(n):
-    turtle.forward(100)
-    turtle.dot()
-    turtle.left(360/n)
+    forward(100)
+    dot()
+    left(360/n)
 
-turtle.done()
+done()
