@@ -4,7 +4,7 @@ Introduction
 Dans ce tutoriel, tu vas apprendre à programmer dans un langage qui s'appelle **Python**.
 Tu vas programmer les déplacements d'une tortue. Voici à quoi ça va ressembler.
 
-.. image:: epfl1.png
+.. image:: epfl1.gif
 
 :download:`epfl1.py <epfl1.py>`
 

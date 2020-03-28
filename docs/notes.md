@@ -84,3 +84,16 @@ Sail
 Lissajous
 voiture
 Flowers
+
+Ideas
+=====
+- look at turtle.cnf to customize for SPS
+- look at examples in the turtledemo: https://github.com/python/cpython/tree/3.8/Lib/turtledemo
+- study GIF making
+- look at translate to German and English
+- add EPFL/SPS background image, add xy axes background image
+
+
+Chapters
+========
+- circles (pos/neg radius)

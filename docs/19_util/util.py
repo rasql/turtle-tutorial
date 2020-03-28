@@ -9,12 +9,12 @@ from PIL import Image
 
 class Util:
     def __init__(self):
-        self.canvas = turtle.getscreen().getcanvas()
+        self.canvas = getscreen().getcanvas()
         self.images = []
         self.file_name = 'img'
-        self.recording = True
+        self.recording = False
+        self.dt = 50
         self.n = 0
-        turtle.ontimer(self.gif, 10)
 
     def save_ps(self):
         print('save PostScript')
@@ -36,18 +36,31 @@ class Util:
         img = Image.open(io.BytesIO(ps.encode('utf-8')))
         img.save(self.file_name + '.png')
 
+    def gif_start(self):
+        self.recording = True
+        self.gif()
+
+    def gif_stop(self):
+        self.recording = False
+
     def gif(self):
         self.n += 1
         if self.recording:
-            turtle.ontimer(self.gif, 10)
+            ontimer(self.gif, self.dt)
             ps = self.canvas.postscript(colormode = 'color')
             img = Image.open(io.BytesIO(ps.encode('utf-8')))
+            print(img)
             self.images.append(img)
         else:
-            print('GIF start', self.n, 'images')
+            print('GIF start saving', self.n, 'images')
+            t0 = time.time()
             self.images[0].save(self.file_name+'.gif', save_all=True, append_images=self.images[1:],
-                                        optimize=True, duration=10, loop=0)
+                                        optimize=True, duration=self.dt * 2, loop=0)
+            t = time.time()
+
             print('GIF saved')
+            print(f'total time = {t-t0:.1f} s')
+            print(f'frames/sec = {self.n/(t-t0):.1f}')
 
     def help(self):
         print("""
@@ -65,52 +78,72 @@ class Util:
 
         C - clear
         H - home
+        R - reset
         Q - quit
+
         U - pen up
         D - pen down
+        T - pen toggle
+        H - toggle turtle visibility
         """)
         
-
 util = Util()
-turtle.onkey(util.help, 'h')
-turtle.onkey(util.save_eps, 'e')
-turtle.onkey(util.save_png, 'p')
-turtle.onkey(util.save_jpg, 'j')
+onkey(util.help, 'h')
+onkey(util.save_eps, 'e')
+onkey(util.save_png, 'p')
+onkey(util.save_jpg, 'j')
 
-turtle.onkey(lambda : turtle.left(30), 'Left')
-turtle.onkey(lambda : turtle.right(30), 'Right')
-turtle.onkey(lambda : turtle.forward(30), 'Up')
-turtle.onkey(lambda : turtle.backward(30), 'Down')
+onkey(lambda : left(30), 'Left')
+onkey(lambda : right(30), 'Right')
+onkey(lambda : forward(30), 'Up')
+onkey(lambda : backward(30), 'Down')
 
-turtle.onkey(turtle.reset, 'r')
-turtle.onkey(turtle.clear, 'c')
-turtle.onkey(turtle.bye, 'q')
+onkey(reset, 'r')
+onkey(home, 'h')
+onkey(clear, 'c')
+onkey(bye, 'q')
 
-turtle.onkey(turtle.up, 'u')
-turtle.onkey(turtle.down, 'd')
-turtle.listen()
+onkey(up, 'u')
+onkey(down, 'd')
+onkey(lambda : up() if isdown() else down(), 't')
+onkey(lambda : hideturtle() if isvisible() else showturtle(), 'v')
+
+listen()
+
+def draw():
+    clear()
+    n = 6
+    write('EPFL', font=('Arial', 36, 'bold'))
+    for i in range(n): 
+        forward(100)
+        dot()
+        left(360/n)
+
+def record():
+    util.gif_start()
+    draw()
+    util.gif_stop()
+
+onkey(draw, 'd')
+onkey(record, 'r')
 
 if __name__ == '__main__':
     
     w, h = 300, 300
     x, y = -100, -50
-    # turtle.setup(w, h)
-    # turtle.screensize(w-20, h-20)
-    # turtle.setworldcoordinates(x, y, x+w, y+h)
-    print(util.canvas)
+    setup(w, h)
+    # screensize(w-20, h-20)
+    # setworldcoordinates(x, y, x+w, y+h)
 
-    turtle.shape('turtle')
-    turtle.color("red", "green")
+    up()
+    goto(-60, -80)
+    down()
 
-    n = 6
-    for i in range(n): 
-        turtle.forward(100)
-        turtle.dot()
-        turtle.left(360/n)
+    shape('turtle')
+    color('red', 'white')
+    speed(1)
 
-    util.recording = False
-
-    turtle.done()
+    done()
 
 
 
