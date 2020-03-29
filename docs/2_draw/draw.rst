@@ -20,7 +20,7 @@ Monter le stylo
 La tortue peut monter et descendre son stylo.
 Ceci lui permet de dessiner des lignes séparées:
 
-.. image:: draw1.png
+.. image:: draw1.gif
 
 .. literalinclude:: draw1.py
    :lines: 2-
@@ -35,7 +35,7 @@ La tortue peut aller directement (en ligne droite) à n'importer quel position
 indiquée par des coordonnés (x, y).
 La commande ``goto(0, 20)`` va téléporter la tortue à la position (x=0, y=20).
 
-.. image:: draw2.png
+.. image:: draw2.gif
 
 .. literalinclude:: draw2.py
    :lines: 2-
@@ -48,7 +48,7 @@ L'épaisseur de ligne
 
 Tu peux modifier l'épaisseur du stylo avec la commande ``width(2)``.
 
-.. image:: draw3.png
+.. image:: draw3.gif
 
 .. literalinclude:: draw3.py
    :lines: 2-
@@ -78,7 +78,7 @@ Par exemple:
 - ``'DeepPink'``
 - ``'Fuchsia'``
 
-.. image:: draw4.png
+.. image:: draw4.gif
 
 .. literalinclude:: draw4.py
    :lines: 2-
@@ -132,7 +132,7 @@ Dessiner un cercle
 La fonction ``circle(40)`` permet de dessiner un cercle avec un rayon de 40 pixels.
 Dans le programme ci-dessous, la tortue dessine deux cercles.
 
-.. image:: draw7.png
+.. image:: draw7.gif
 
 .. literalinclude:: draw7.py
    :lines: 2-

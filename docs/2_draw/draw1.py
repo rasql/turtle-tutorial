@@ -5,6 +5,6 @@ forward(100)
 up()
 forward(50)
 down()
-forward(50)
+forward(100)
 
 done()

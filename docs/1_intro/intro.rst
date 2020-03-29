@@ -74,9 +74,11 @@ Pour pouvoir utiliser ce module, tu dois l'importer au début du programme::
 
 Ensuite tu peux donner un ordre à ta tortue::
 
-    >>> forward(100)
+    >>> forward(200)
 
-Cette commande fait avancer la tortue de 100 pixels. 
+.. image:: intro1.gif
+
+Cette commande fait avancer la tortue de 200 pixels. 
 Une commande pour contrôler la tortue a la forme suivante:
 
 - une commande (forward, backward, left, right, etc.)
@@ -87,13 +89,19 @@ Par exemple, pour faire reculer la tortue de 200 pixels, écris ceci::
 
     >>> backward(200)
 
+.. image:: intro2.gif
+
 Pour faire tourner la tortue de 90 degrés vers la gauche::
 
     >>> left(90)
 
+.. image:: intro3.png
+
 Pour faire tourner la tortue de 45 degrés vers la droite::
 
     >>> right(45)
+
+.. image:: intro4.png
 
 La console est un outil très pratique. 
 A n'importe quel moment tu peux facilement tester des commandes.
@@ -125,7 +133,7 @@ Une fois le programme terminé, tu peux l'exécuter à l'aide du bouton vert **E
 Le programme suivant fait dessiner un triangle à la tortue. 
 Essaye de le programmer!
 
-.. image:: triangle.png
+.. image:: triangle.gif
 
 .. literalinclude:: triangle.py
    :lines: 2-
@@ -142,7 +150,7 @@ Dessiner une maison
 
 En utilisant des angles de 45 et 90 degrés, tu peux dessiner une maison.
 
-.. image:: house.png
+.. image:: house.gif
 
 .. literalinclude:: house.py
    :lines: 2-
@@ -155,7 +163,7 @@ Ajouter une porte
 
 Tu peux ajouter une porte en dessinant encore un rectangle.
 
-.. image:: house2.png
+.. image:: house2.gif
 
 .. literalinclude:: house2.py
    :lines: 2-

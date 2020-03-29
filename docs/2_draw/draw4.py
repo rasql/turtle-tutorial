@@ -11,6 +11,5 @@ left(90)
 
 pencolor('fuchsia')
 forward(300)
-left(90)
 
 done()

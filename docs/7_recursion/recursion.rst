@@ -21,3 +21,9 @@ En changeant les paramètres::
 
 
 .. image:: tree1b.png
+
+.. 
+    raw:: html
+    <iframe src="https://scratch.mit.edu/projects/115986535/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+
